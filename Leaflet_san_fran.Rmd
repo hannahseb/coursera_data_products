@@ -1,0 +1,24 @@
+---
+title: "Leaflet"
+author: "Hannah Sebald"
+date: "2023-03-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(leaflet)
+```
+
+## 08.03.2023
+
+
+```{r chunk 1, echo = FALSE}
+
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=37.7562, lng= -122.4430, popup="My fav city in US")
+my_map
+
+```
+
