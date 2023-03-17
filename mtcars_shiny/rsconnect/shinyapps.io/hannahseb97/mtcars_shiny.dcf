@@ -1,0 +1,13 @@
+name: mtcars_shiny
+title: mtcars_shiny
+username:
+account: hannahseb97
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8594533
+bundleId: 6970273
+url: https://hannahseb97.shinyapps.io/mtcars_shiny/
+when: 1679042602.09401
+lastSyncTime: 1679042602.09401
+asMultiple: FALSE
+asStatic: FALSE
