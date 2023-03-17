@@ -1,0 +1,53 @@
+---
+title: "Reproducible Pitch Presentation"
+author: "Hannah Sebald"
+date: "2023-03-17"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Welcome
+This is the presentation created for the final task of the course "developing data products". 
+
+## Content
+
+In the next slides you will see r manipulations
+- Bullet 2
+- Bullet 3
+
+## Head output of mtcars dataset
+
+```{r, echo = TRUE}
+head(mtcars)
+```
+
+## Code for Scatterplot of mpg x disp
+```{r, echo = FALSE}
+library(ggplot2)
+```
+
+```{r, echo = TRUE, fig.show='hide'}
+ggplot(mtcars, aes_string(x = mtcars$mpg, y = mtcars$disp)) +
+                  geom_point() +
+                  xlab(mtcars$mpg) +
+                  ylab(mtcars$disp) +
+                  ggtitle("Scatterplot of mtcars")
+```
+
+## Output for Scatterplot of mpg x disp
+```{r, echo = FALSE}
+library(ggplot2)
+```
+
+```{r, echo = FALSE}
+ggplot(mtcars, aes_string(x = mtcars$mpg, y = mtcars$disp)) +
+                  geom_point() +
+                  xlab(mtcars$mpg) +
+                  ylab(mtcars$disp) +
+                  ggtitle("Scatterplot of mtcars")
+```
+
+## Thank you
